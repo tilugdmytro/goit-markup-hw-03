@@ -39,8 +39,7 @@ body {
 }
 
 .container {
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
     width: 1200px;
@@ -48,7 +47,24 @@ body {
 }
 
 /* =========== HEADER =========== */
+.header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
 .logo {
+    margin-right: 93px;
+
 font-family: var(--secondary-font);
 font-weight: 700;
 font-size: 26px;
@@ -67,9 +83,13 @@ color: #2196F3;
 }
 
 .navigation-list {
+    display: flex;
+    align-items: center;
     margin-top: 0;
     margin-bottom: 0;
 }
+
+.navigatio-item:not(:nth-last-child())
 
 .navigation-link {
 font-weight: 500;
@@ -91,6 +111,8 @@ color: var(--accent-color);
 }
 
 .contact-link {
+    margin-left: auto;
+    
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
@@ -106,6 +128,17 @@ color:var(--accent-color);
 /* =========== END HEADER =========== */
 
 /* =========== HERO =========== */
+.hero {
+    background-color: #2F303A;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.hero .container {
+    display: flex;
+    align-items: center;
+}
+
 .hero-title {
     margin-bottom: 30px;
 
@@ -116,10 +149,12 @@ text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
 
-/* color: #FFFFFF; */
+color: #FFFFFF;
 }
 
 .modal-btn {
+padding: 10px 32px;
+min-width: 200px;
 font-weight: 700;
 font-size: 16px;
 line-height: 1.88;
@@ -195,13 +230,26 @@ color: #757575;
 
 /* =========== TEAM =========== */
 .team-list {
-    margin-top: 0;
+    display: flex;
+    margin-left: -30px;
+    margin-top: -30px;
     margin-bottom: 0;
 }
 
-.team-item-img {
-    margin-bottom: 30px;
+.team-item {
+    margin-left: 30px;
+    margin-top: 30px;
+    /* flex-basis: calc(100%/4-30px); */
 }
+
+.team-list-container {
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
 
 .team-title {
     margin-bottom: 10px;
